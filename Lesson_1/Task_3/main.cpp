@@ -6,9 +6,6 @@ int main()
 {
     double number1=0, number2=0, result=0;
     char operation=0;
-    char choice=0;
-
-    do {
 
     cout <<"Enter first number" << endl;
     cin >> number1;
@@ -34,21 +31,10 @@ int main()
     else if (operation == '/'){
         if (number2 !=0){
             result = number1 / number2;
-        }else cout << "Error! Can't divide by 0"<<endl;
+        }
+        else cout << "Error! Can't divide by 0" << endl;
 
     }
-    cout<< "Result:"<<result<< endl;
-
-    cout << "Do you want to perform another calculation? (y/n): ";
-    cin >> choice;
-    }
-    while (choice == 'y' || choice == 'Y');{
-
-        cout << "Program ended." << endl;
-        return 0;
-
-
-    }
-
+    cout<< "Result:" << result << endl;
 
 }
