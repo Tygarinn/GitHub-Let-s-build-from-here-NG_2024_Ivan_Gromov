@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int height;
+    int height = 0;
 
     cout << "Enter Christmas tree height: ";
     cin >> height;
