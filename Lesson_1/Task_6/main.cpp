@@ -14,35 +14,35 @@ int main() {
 
     while(true)
     {
-        for (int i = 0; i <= triangleSize; i++)
+        for (int counter = 0; counter <= triangleSize; counter++)
         {
-            cout << string(i, triangleSymbol);
-            cout << string(triangleSize - i, space);
+            cout << string(counter, triangleSymbol);
+            cout << string(triangleSize - counter, space);
             cout << "\n";
 
         }
         Sleep(sleep);
         system("cls");
-        for (int i = triangleSize; i >= 0; i--)
+        for (int counter = triangleSize; counter >= 0; counter--)
         {
-            cout << string(i, triangleSymbol);
-            cout << string(triangleSize - i, space);
+            cout << string(counter, triangleSymbol);
+            cout << string(triangleSize - counter, space);
             cout << "\n";
         }
         Sleep(sleep);
         system("cls");
-        for (int i = 0; i <= triangleSize; i++)
+        for (int counter = 0; counter <= triangleSize; counter++)
         {
-            cout << string(i, space);
-            cout << string(triangleSize - i, triangleSymbol);
+            cout << string(counter, space);
+            cout << string(triangleSize - counter, triangleSymbol);
             cout << "\n";
         }
         Sleep(sleep);
         system("cls");
-        for (int i = triangleSize; i >= 0; i--)
+        for (int counter = triangleSize; counter >= 0; counter--)
         {
-            cout << string(i, space);
-            cout << string(triangleSize - i, triangleSymbol);
+            cout << string(counter, space);
+            cout << string(triangleSize - counter, triangleSymbol);
             cout << "\n";
         }
         Sleep(sleep);
