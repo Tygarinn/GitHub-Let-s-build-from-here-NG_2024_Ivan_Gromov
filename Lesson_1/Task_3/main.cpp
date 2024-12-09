@@ -4,37 +4,47 @@ using namespace std;
 
 int main()
 {
-    double number1=0, number2=0, result=0;
-    char operation=0;
+    double number1 = 0, number2 = 0, result = 0;
+    char operation = 0;
 
-    cout <<"Enter first number" << endl;
+    cout << "Enter first number" << endl;
     cin >> number1;
 
-    cout <<"Enter second number" << endl;
+    cout << "Enter second number" << endl;
     cin >> number2;
 
-    cout << "What operation do you want to perform? (+, -, *, /)"<< endl;
+    cout << "What operation do you want to perform? (+, -, *, /)" << endl;
     cin >> operation;
 
-    if (operation == '+'){
+    switch (operation)
+    {
+    case '+':
         result = number1 + number2;
-    }
+        cout << "Result: " << result << endl;
+        break;
 
-    else if (operation == '-'){
+    case '-':
         result = number1 - number2;
-    }
+        cout << "Result: " << result << endl;
+        break;
 
-    else if (operation == '*'){
+    case '*':
         result = number1 * number2;
-    }
+        cout << "Result: " << result << endl;
+        break;
 
-    else if (operation == '/'){
-        if (number2 !=0){
+    case '/':
+        if (number2 != 0)
+        {
             result = number1 / number2;
+            cout << "Result: " << result << endl;
         }
-        else cout << "Error! Can't divide by 0" << endl;
-
+        else
+        {
+            cout << "Error! Can't divide by 0" << endl;
+        }
+        break;
     }
-    cout<< "Result:" << result << endl;
 
+    return 0;
 }
