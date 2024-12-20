@@ -14,11 +14,11 @@ int main()
     }
 
     if (salary > 1000){
-        if (salary < 999999.999)
+        if (salary < 999999.999){
             cout << "Good job, buddy!" << endl;
-    }
-
-    if (salary > 999999.999){
-        cout << "BOMBOCLAAAAT! RICH!!! MILLIONAIRE!!!" << endl;
+        }
+        if (salary > 999999.999){
+            cout << "BOMBOCLAAAAT! RICH!!! MILLIONAIRE!!!" << endl;
+        }
     }
 }
